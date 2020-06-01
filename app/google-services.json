@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "907005562648",
+    "firebase_url": "https://one-g-mall-database-83e16.firebaseio.com",
+    "project_id": "one-g-mall-database-83e16",
+    "storage_bucket": "one-g-mall-database-83e16.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907005562648:android:0a54f71173edd13e35186d",
+        "android_client_info": {
+          "package_name": "com.example.onegmall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "907005562648-r17a3j3op0srhc15ua7dan4s3go1mhrd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATWeE_Y5l1UmR8weGajb2Yt5XvDPhBPIU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "907005562648-r17a3j3op0srhc15ua7dan4s3go1mhrd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
