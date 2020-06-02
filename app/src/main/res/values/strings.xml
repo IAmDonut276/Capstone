@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">OneGMall</string>
+    <string name="app_name">One G Mall</string>
+    <string name="orSignUp">New to the app? Please sign up!</string>
 </resources>
