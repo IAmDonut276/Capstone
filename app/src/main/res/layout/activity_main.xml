@@ -106,6 +106,7 @@
         android:layout_marginEnd="160dp"
         android:layout_marginRight="160dp"
         android:text="Login"
+        android:onClick="SignIn"
         android:textColor="@color/colorPrimaryDark"
         />
 
@@ -141,6 +142,7 @@
         android:layout_marginEnd="140dp"
         android:layout_marginRight="140dp"
         android:text="Sign Up"
+        android:onClick="Signup"
         android:textColor="@color/colorPrimaryDark" />
 
 

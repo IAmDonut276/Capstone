@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">One G Mall</string>
     <string name="orSignUp">New to the app? Please sign up!</string>
+    <string name="amount_available">Your current amount available:</string>
+    <string name="choose_your_top_up_amount">Choose your top up amount</string>
+    <string name="enter_your_game_id_no">Enter your game ID no.:</string>
     <string name="feedbackmessage">If there are any concerns, problems or suggestions about the app.
         Please feel free to contact us!</string>
 </resources>

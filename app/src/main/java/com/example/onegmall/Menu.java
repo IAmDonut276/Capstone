@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -43,14 +44,15 @@ public class Menu extends AppCompatActivity {
                 });
     }
 
-/*    public void todonutcurrency(View view) {
-    Intent intent = new Intent(this,DonutCurrencyCheck.class);
+    public void checkCurrDonut(View view) {
+        Intent intent = new Intent(this,DonutCurrencyCheck.class);
         startActivity(intent);
     }
 
-    public void tolifeaftercurrency(View view) {
+    public void checkCurrLifeafter(View view) {
         Intent intent = new Intent(this,LifeafterCurrencyCheck.class);
         startActivity(intent);
-    } */
+
+    }
 }
 

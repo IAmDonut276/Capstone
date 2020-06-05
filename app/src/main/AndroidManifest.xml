@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LogOut"></activity>
+        <activity android:name=".Checkout"></activity>
+        <activity android:name=".TopUpLifeafter" />
+        <activity android:name=".TopUpDonut" />
+        <activity android:name=".LifeafterCurrencyCheck" />
+        <activity android:name=".DonutCurrencyCheck" />
+        <activity android:name=".LogOut" />
         <activity android:name=".Feedback" />
         <activity android:name=".History" />
         <activity android:name=".Menu" />

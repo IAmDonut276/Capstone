@@ -77,7 +77,8 @@
         android:layout_marginStart="60dp"
         android:layout_marginLeft="60dp"
         android:layout_marginTop="25dp"
-        app:srcCompat="@drawable/donut" />
+        app:srcCompat="@drawable/donut"
+        android:onClick="checkCurrDonut"/>
 
     <ImageButton
         android:id="@+id/imagebtn2"
@@ -89,7 +90,8 @@
         android:layout_marginTop="25dp"
         android:layout_marginEnd="46dp"
         android:layout_marginRight="46dp"
-        app:srcCompat="@drawable/download" />
+        app:srcCompat="@drawable/download"
+        android:onClick="checkCurrLifeafter"/>
 
     <Button
         android:id="@+id/btndonut"
@@ -103,7 +105,8 @@
         android:layout_marginTop="0dp"
         android:background="@android:color/transparent"
         android:text="Donut Cafe"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        android:onClick="checkCurrDonut" />
 
     <Button
         android:id="@+id/btnlifeafter"
@@ -117,6 +120,7 @@
         android:layout_marginRight="80dp"
         android:background="@android:color/transparent"
         android:text="LifeAfter"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        android:onClick="checkCurrLifeafter" />
 
 </RelativeLayout>
