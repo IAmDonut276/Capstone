@@ -26,12 +26,13 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="136dp"
-        android:layout_marginLeft="136dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginLeft="130dp"
         android:layout_marginTop="25dp"
-        android:layout_marginEnd="136dp"
-        android:layout_marginRight="136dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginRight="130dp"
         android:text="Feedback"
+        android:gravity="center"
         android:textColor="@android:color/black"
         android:textSize="30sp" />
 
@@ -126,6 +127,7 @@
         android:id="@+id/submitbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_nav"
         android:layout_below="@+id/editText"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
@@ -136,5 +138,6 @@
         android:layout_marginTop="155dp"
         android:layout_marginEnd="161dp"
         android:layout_marginRight="161dp"
+        android:layout_marginBottom="154dp"
         android:text="Send" />
 </RelativeLayout>
