@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">One G Mall</string>
     <string name="orSignUp">New to the app? Please sign up!</string>
+    <string name="feedbackmessage">If there are any concerns, problems or suggestions about the app.
+        Please feel free to contact us!</string>
 </resources>
