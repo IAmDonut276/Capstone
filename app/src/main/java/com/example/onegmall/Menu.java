@@ -52,5 +52,5 @@ public class Menu extends AppCompatActivity {
         Intent intent = new Intent(this,LifeafterCurrencyCheck.class);
         startActivity(intent);
     } */
-    }
 }
+
