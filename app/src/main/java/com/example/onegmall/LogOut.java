@@ -22,7 +22,8 @@ public class LogOut extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_out);
 
-        btnLogout =findViewById(R.id.logout);
+        btnLogout =findViewById(R.id.logoutBtn);
+        mFirebaseAuth=FirebaseAuth.getInstance();
 
         btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override

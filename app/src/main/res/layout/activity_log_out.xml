@@ -7,6 +7,23 @@
     android:background="#5CFFE53B"
     tools:context=".LogOut">
 
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginRight="140dp"
+        android:gravity="center"
+        android:text="LogOut" />
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nav"
         android:layout_width="match_parent"
@@ -36,22 +53,7 @@
         android:textColor="@android:color/black"
         android:textSize="30sp" />
 
-    <Button
-        android:id="@+id/logout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView10"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="140dp"
-        android:layout_marginLeft="140dp"
-        android:layout_marginTop="240dp"
-        android:layout_marginEnd="140dp"
-        android:layout_marginRight="140dp"
-        android:gravity="center"
-        android:text="LogOut" />
+
 
 
 </RelativeLayout>
