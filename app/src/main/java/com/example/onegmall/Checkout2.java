@@ -9,6 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Checkout2 extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 
@@ -35,6 +36,7 @@ public class Checkout2 extends AppCompatActivity implements AdapterView.OnItemSe
 
     public void checkout(View view) {
         Intent intent = new Intent(Checkout2.this, Menu.class);
+        Toast.makeText(this, "Bought Complete", Toast.LENGTH_SHORT).show();
         startActivity(intent);
     }
 

@@ -37,6 +37,7 @@ public class Checkout extends AppCompatActivity implements AdapterView.OnItemSel
 
     public void checkout(View view) {
         Intent intent = new Intent(Checkout.this, Menu.class);
+        Toast.makeText(this, "Bought Complete", Toast.LENGTH_SHORT).show();
         startActivity(intent);
     }
 

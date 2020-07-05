@@ -64,11 +64,12 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="141dp"
-        android:layout_marginLeft="141dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
         android:layout_marginTop="12dp"
-        android:layout_marginEnd="141dp"
-        android:layout_marginRight="141dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginRight="120dp"
+        android:gravity="center"
         android:text="Checkout"
         android:textColor="@android:color/black"
         android:textSize="30sp" />
@@ -114,11 +115,12 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="160dp"
-        android:layout_marginLeft="160dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
         android:layout_marginTop="80dp"
-        android:layout_marginEnd="160dp"
-        android:layout_marginRight="160dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginRight="150dp"
+        android:gravity="center"
         android:onClick="checkout"
         android:text="Confirm"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -192,8 +194,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:layout_toEndOf="@+id/textView19"
-        android:layout_toRightOf="@+id/textView19"
-        android:entries="Ambank,CIMB Bank,Maybank,RHB Bank" />
+        android:layout_toRightOf="@+id/textView19" />
 
     <TextView
         android:id="@+id/textView20"
