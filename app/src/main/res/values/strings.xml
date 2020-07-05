@@ -6,4 +6,13 @@
     <string name="enter_your_game_id_no">Enter your game ID no.:</string>
     <string name="feedbackmessage">If there are any concerns, problems or suggestions about the app.
         Please feel free to contact us!</string>
+    <string name="donutCafe">Donut Cafe</string>
+    <string name="lifeAfter">LifeAfter</string>
+
+    <string-array name="bankName">
+        <item>Ambank</item>
+        <item>CIMB Bank</item>
+        <item>Maybank</item>
+        <item>RHB Bank</item>
+    </string-array>
 </resources>

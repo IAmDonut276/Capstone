@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#5CFFE53B"
-    tools:context=".Checkout">
+    tools:context=".Checkout2">
 
     <View
         android:id="@+id/divider9"
@@ -101,7 +101,7 @@
         android:layout_marginStart="28dp"
         android:layout_marginLeft="28dp"
         android:layout_marginTop="3dp"
-        android:text="@string/donutCafe"
+        android:text="@string/lifeAfter"
         android:textColor="@android:color/black"
         android:textSize="24sp" />
 
@@ -140,7 +140,7 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="144dp"
         android:layout_marginRight="144dp"
-        app:srcCompat="@drawable/donut" />
+        app:srcCompat="@drawable/download" />
 
     <TextView
         android:id="@+id/textView17"
@@ -192,8 +192,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:layout_toEndOf="@+id/textView19"
-        android:layout_toRightOf="@+id/textView19"
-        android:entries="Ambank,CIMB Bank,Maybank,RHB Bank" />
+        android:layout_toRightOf="@+id/textView19" />
 
     <TextView
         android:id="@+id/textView20"

@@ -5,14 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
-public class Checkout extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+public class Checkout2 extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 
     TextView tv;
     String st;
@@ -20,7 +18,7 @@ public class Checkout extends AppCompatActivity implements AdapterView.OnItemSel
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_checkout);
+        setContentView(R.layout.activity_checkout2);
 
         tv=findViewById(R.id.textView18);
 
@@ -36,7 +34,7 @@ public class Checkout extends AppCompatActivity implements AdapterView.OnItemSel
     }
 
     public void checkout(View view) {
-        Intent intent = new Intent(Checkout.this, Menu.class);
+        Intent intent = new Intent(Checkout2.this, Menu.class);
         startActivity(intent);
     }
 
@@ -50,3 +48,4 @@ public class Checkout extends AppCompatActivity implements AdapterView.OnItemSel
 
     }
 }
+
