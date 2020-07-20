@@ -9,9 +9,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class Feedback extends AppCompatActivity {
     EditText email;
@@ -49,9 +51,9 @@ public class Feedback extends AppCompatActivity {
                     }
                 });
 
-        final EditText email = (EditText)findViewById(R.id.editText2);
-        final EditText message =(EditText)findViewById(R.id.editText);
-        btn = findViewById(R.id.submitbtn);
+        email = (EditText)findViewById(R.id.editText2);
+        message =(EditText)findViewById(R.id.editText);
+        btn = findViewById(R.id.button2);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,5 +62,6 @@ public class Feedback extends AppCompatActivity {
                 message.setText("");
             }
         });
+
     }
 }
