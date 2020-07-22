@@ -3,10 +3,19 @@ package com.example.onegmall;
 public class UserData {
  String Donut_Cafe;
  String LifeAfter;
+ String Currency;
 
  public UserData(){
 
  }
+
+ public String getCurrency(){
+     return Currency;
+ }
+
+    public void setCurrency(String currency) {
+        Currency = currency;
+    }
 
     public String getDonut_Cafe() {
         return Donut_Cafe;
