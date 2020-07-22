@@ -1,17 +1,17 @@
 package com.example.onegmall;
 
 public class UserInfo {
-    Double currency;
+    Long currency;
 
     public UserInfo(){
 
     }
 
-    public void setCurrency(Double currency) {
+    public void setCurrency(Long currency) {
         this.currency = currency;
     }
 
-    public Double getCurrency() {
+    public Long getCurrency() {
         return currency;
     }
 }
