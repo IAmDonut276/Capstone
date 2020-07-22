@@ -64,7 +64,7 @@ public class DonutCurrencyCheck extends AppCompatActivity {
     private void showData(DataSnapshot dataSnapshot) {
         for(DataSnapshot ds : dataSnapshot.getChildren()){
             UserInfo uData = new UserInfo();
-            Double c=(Double)ds.child(userID).child("currency").getValue();
+            Double c=(Double)ds.child("currency").getValue();
             //uData.setCurrency(ds.child(userID).getValue(UserInfo.class).getCurrency());
             //uData.setLifeAfter(ds.child(userID).getValue(UserInfo.class).getLifeAfter());
 
@@ -73,6 +73,7 @@ public class DonutCurrencyCheck extends AppCompatActivity {
             //Log.d(TAG,"showData: LifeAfter: "+ uData.getLifeAfter());
 
 
+            txt.setText(c.toString());
         }
     }
 
