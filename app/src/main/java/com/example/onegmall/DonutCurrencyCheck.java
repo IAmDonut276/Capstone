@@ -27,7 +27,7 @@ import java.util.Currency;
 
 public class DonutCurrencyCheck extends AppCompatActivity {
 
-    Button btn;
+    Button btn,btn2;
     TextView txt;
     DatabaseReference myRef;
     String TAG ="g";
@@ -66,7 +66,7 @@ public class DonutCurrencyCheck extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Long C = new Long(c+100);
+                Long C = new Long(c-200);
                 myRef.child(userID).child("currency").setValue(C);
             }
         });

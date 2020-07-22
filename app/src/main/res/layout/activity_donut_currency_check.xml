@@ -150,9 +150,10 @@
         android:layout_below="@+id/totopup"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginStart="163dp"
-        android:layout_marginLeft="163dp"
-        android:layout_marginTop="33dp"
-        android:text="Add Value" />
+        android:layout_marginStart="157dp"
+        android:layout_marginLeft="157dp"
+        android:layout_marginTop="18dp"
+        android:text="Buy Boost"
+        android:textColor="@android:color/black" />
 
 </RelativeLayout>

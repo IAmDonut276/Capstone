@@ -220,7 +220,6 @@
         android:layout_toEndOf="@+id/editText3"
         android:layout_toRightOf="@+id/editText3"
         android:text="Checkout"
-        android:textColor="@color/colorPrimaryDark"
-        android:onClick="tocheckout"/>
+        android:textColor="@android:color/black" />
 
 </RelativeLayout>
