@@ -64,15 +64,15 @@ public class DonutCurrencyCheck extends AppCompatActivity {
     private void showData(DataSnapshot dataSnapshot) {
         for(DataSnapshot ds : dataSnapshot.getChildren()){
             UserInfo uData = new UserInfo();
-            uData.setCurrency(ds.child(userID).getValue(UserInfo.class).getCurrency());
+            Double c=(Double)ds.child(userID).child("currency").getValue();
+            //uData.setCurrency(ds.child(userID).getValue(UserInfo.class).getCurrency());
             //uData.setLifeAfter(ds.child(userID).getValue(UserInfo.class).getLifeAfter());
 
             //display all the items
             Log.d(TAG, "showData: Donut Cafe: "+ uData.getCurrency());
             //Log.d(TAG,"showData: LifeAfter: "+ uData.getLifeAfter());
 
-            Integer st= uData.getCurrency();
-            txt.setText(st);
+
         }
     }
 
