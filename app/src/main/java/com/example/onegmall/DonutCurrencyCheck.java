@@ -27,12 +27,14 @@ import java.util.Currency;
 
 public class DonutCurrencyCheck extends AppCompatActivity {
 
+    Button btn;
     TextView txt;
     DatabaseReference myRef;
     String TAG ="g";
     FirebaseDatabase database=FirebaseDatabase.getInstance();
     FirebaseAuth mAuth=FirebaseAuth.getInstance();
     String userID;
+    Long c;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +45,7 @@ public class DonutCurrencyCheck extends AppCompatActivity {
         FirebaseUser user =mAuth.getCurrentUser();
         userID= user.getUid();
         txt =findViewById(R.id.textView5);
+        btn=findViewById(R.id.button5);
 
 // Read from the database
         myRef.addValueEventListener(new ValueEventListener() {
@@ -59,19 +62,26 @@ public class DonutCurrencyCheck extends AppCompatActivity {
                 Log.w(TAG, "Failed to read value.", error.toException());
             }
         });
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Long C = new Long(c+100);
+                myRef.child(userID).child("currency").setValue(C);
+            }
+        });
     }
 
     private void showData(DataSnapshot dataSnapshot) {
         for(DataSnapshot ds : dataSnapshot.getChildren()){
             UserInfo uData = new UserInfo();
-            Long c=(Long)ds.child("currency").getValue();
+            c=(Long)ds.child("currency").getValue();
             //uData.setCurrency(ds.child(userID).getValue(UserInfo.class).getCurrency());
             //uData.setLifeAfter(ds.child(userID).getValue(UserInfo.class).getLifeAfter());
 
             //display all the items
             Log.d(TAG, "showData: Donut Cafe: "+ uData.getCurrency());
             //Log.d(TAG,"showData: LifeAfter: "+ uData.getLifeAfter());
-
 
             txt.setText(c.toString());
         }
@@ -81,6 +91,8 @@ public class DonutCurrencyCheck extends AppCompatActivity {
         Intent intent = new Intent(this, TopUpDonut.class);
         startActivity(intent);
     }
+
+
 
 
 }
