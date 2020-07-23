@@ -27,7 +27,7 @@ import java.util.Currency;
 
 public class DonutCurrencyCheck extends AppCompatActivity {
 
-    Button btn,btn2;
+    Button btn;
     TextView txt;
     DatabaseReference myRef;
     String TAG ="g";
@@ -73,26 +73,13 @@ public class DonutCurrencyCheck extends AppCompatActivity {
     }
 
     private void showData(DataSnapshot dataSnapshot) {
-        for(DataSnapshot ds : dataSnapshot.getChildren()){
-            UserInfo uData = new UserInfo();
-            c=(Long)ds.child("currency").getValue();
-            //uData.setCurrency(ds.child(userID).getValue(UserInfo.class).getCurrency());
-            //uData.setLifeAfter(ds.child(userID).getValue(UserInfo.class).getLifeAfter());
-
-            //display all the items
-            Log.d(TAG, "showData: Donut Cafe: "+ uData.getCurrency());
-            //Log.d(TAG,"showData: LifeAfter: "+ uData.getLifeAfter());
+            c=(Long)dataSnapshot.child(userID).child("currency").getValue();
 
             txt.setText(c.toString());
         }
-    }
 
     public void totopupdonut(View view) {
         Intent intent = new Intent(this, TopUpDonut.class);
         startActivity(intent);
     }
-
-
-
-
 }
